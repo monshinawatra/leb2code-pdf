@@ -1,7 +1,6 @@
-def print_text(text: str):
-    print(text)
-
-
-for i in range(1, 11):
-    print_text(f"number {i}")
-    
+try:
+    with open("./5/myFiles.txt", "r") as file:
+        print(file.read())
+    print("Successfully print content in myFile.txt")
+except FileNotFoundError:
+    print("Unable to open file myFile.txt")
