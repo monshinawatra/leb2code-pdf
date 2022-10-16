@@ -17,7 +17,7 @@ class PDFMaker(FPDF):
             format=size,
         )
         self.add_page()
-        self.add_font(family="THSarabun", fname="font/THSarabun.ttf")
+        self.add_font(family="THSarabun", fname="font/THSarabun.ttf", uni=True)
         if len(name):
             self.set_font("THSarabun", size=28)
             self.cell(w=0, txt=name, align="C")
@@ -31,8 +31,10 @@ class PDFMaker(FPDF):
     def save_pdf(self, path: str = "demo.pdf"):
         self.output(path)
 
-    def write_image(self, image: Image, label: str = "", page: int = 0):
-        if page != 0:
-            self.add_page()
-        self.cell(60, 10, label, new_x="LMARGIN", new_y="NEXT", align="L")
+    def write_image(self, image: Image, output: Image = None, label: str = ""):
+        self.add_page()
+        self.cell(60, 10, label, align="L")
+        self.ln()
         self.image(image, w=self.epw)
+        if output != None:
+            self.image(output, w=self.epw / 2)

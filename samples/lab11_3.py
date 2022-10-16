@@ -1,3 +1,11 @@
-with open("./5/myFile.txt", "r") as file:
-    text = file.read().split()
-print("Total words are", len(text))
+def is_prime(number):
+    if number <= 1:
+        return ""
+    for i in range(2, number):
+        if number % i == 0:
+            return ""
+    return "This is prime number"
+
+
+n = int(input("Enter a number to test:"))
+print(is_prime(n))
