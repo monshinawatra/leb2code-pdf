@@ -3,6 +3,7 @@
 <br> **LEB2** (Learning Environment version B2) https://www.leb2.org/
 ## Installation
 <code>git clone https://github.com/monshinawatra/leb2code-pdf.git</code>
+<br><code>pip install -r requirements.txt</code>
 
 ## Usage
 <code>python app.py</code>
