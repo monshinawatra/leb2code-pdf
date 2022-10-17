@@ -64,7 +64,7 @@ if __name__ == "__main__":
 
     data_dict = {}
 
-    with open("color.json") as file:
+    with open("utils/color.json") as file:
         colors = json.load(file)
     for name, code in zip(files, code_list):
         print(f":: {name}")
