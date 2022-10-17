@@ -30,7 +30,7 @@ Here it is result from <a href="https://carbon.now.sh/">carbon</a>
 ## Task
 - [x] Main application.
 - [ ] Refactor our code.
-- [ ] Arguments parsing.
+- [x] Arguments parsing.
 - [ ] Beautify code snippets, layout, label in pdf file.
 
 ## Reference
