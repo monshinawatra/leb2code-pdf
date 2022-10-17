@@ -17,13 +17,12 @@ arguments = {
 }
 code_directory = "samples"
 
-
 pdf = PDFMaker(name="ชินวัตร นาไชยธง", number="65090500408")
 files, code_list = read_code(directory=code_directory, identification="lab")
 
 data_dict = {}
 
-with open("color.json") as file:
+with open("utils/color.json") as file:
     colors = json.load(file)
 for name, code in zip(files, code_list):
     print(f":: {name}")
