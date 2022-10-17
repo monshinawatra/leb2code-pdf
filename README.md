@@ -21,7 +21,7 @@
 | `fontSize`                | `16`                  | int   | Just size of font in code snippets.
 | `lineNumbers`             | `False`               | bool  | Turn on/off line number
 | `width`                   | `680`                 | int   | Width of code snippets
-
+| `output_path`             | `"output/demo_adjust.pdf"` | str | Output path for pdf file.
 ## Example
 Here it is result from <a href="https://carbon.now.sh/">carbon</a>
 <br>
