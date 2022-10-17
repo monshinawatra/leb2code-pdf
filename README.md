@@ -1,5 +1,5 @@
 ![preview](preview/banner.png)
-<br> Saving your time by automatic convert python code files into pdf files, for KMUTT college students.
+<br> Saving your time by automatic convert **python** code files into pdf files, for KMUTT college students.
 <br> **LEB2** (Learning Environment version B2) https://www.leb2.org/
 ## Installation
 <code>git clone https://github.com/monshinawatra/leb2code-pdf.git</code>
