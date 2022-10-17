@@ -14,7 +14,7 @@
 | `name` (required)         |                       | str   | Your full name. e.g. `ชินวัตร นาไชยธง`, `Shinawatra Nachaithong`
 | `number_id` (required)    |                       | int   | Your **KMUTT** college students id. e.g.  `65090500000`
 | `directory`               | `"./"`                | str   | Your code directory.
-| `identification`          | `lab`                 | str   | All your unique code file name.
+| `identification`          | "`lab`"               | str   | All your unique code file name.
 | `backgroundColor`         | `"Golden Poppy"`      | str   | Background color. See all color names in color config, <br>or you can use your custom HEX color code. 
 | `theme`                   | `"Night Owl"`         | str   | Color theme in code snippet.
 | `fontFamily`              | `"Fira Code"`         | str   | Font family, e.g. `JetBrains Mono`, `Fira Code`. <br>See all names in carbon exported config.
