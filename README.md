@@ -20,6 +20,12 @@
 | `lineNumbers`             | `True`                | bool  | Turn on/off line number
 | `width`                   | `680`                 | int   | Width of code snippets
 
+## Task
+- [x] Main application.
+- [ ] Refactor our code.
+- [ ] Arguments parsing.
+- [ ] Beautify code snippets, layout, label in pdf file.
+
 ## Reference
 **Carbon** <br>
 Create and share beautiful images of your source code.
