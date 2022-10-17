@@ -1,5 +1,5 @@
 ![preview](preview/banner.png)
-<br> Saving your time by automatic convert python code files into pdf files, for KMUTT college students.
+<br> Saving your time by automatic convert **python** code files into pdf files, for KMUTT college students.
 <br> **LEB2** (Learning Environment version B2) https://www.leb2.org/
 ## Installation
 <code>git clone https://github.com/monshinawatra/leb2code-pdf.git</code>
@@ -13,17 +13,24 @@
 | ------------------------- | --------------------- |:-----:| ------------------------------------------- |
 | `name` (required)         |                       | str   | Your full name. e.g. `ชินวัตร นาไชยธง`, `Shinawatra Nachaithong`
 | `number_id` (required)    |                       | int   | Your **KMUTT** college students id. e.g.  `65090500000`
-| `backgroundColor`         | `"Golden Poppy"`   | str   | Background color. See all color names in color config, <br>or you can use your custom HEX color code. 
+| `directory`               | `"./"`                | str   | Your code directory.
+| `identification`          | `"lab"`               | str   | All your unique code file name.
+| `backgroundColor`         | `"Golden Poppy"`      | str   | Background color. See all color names in color config, <br>or you can use your custom HEX color code. 
 | `theme`                   | `"Night Owl"`         | str   | Color theme in code snippet.
 | `fontFamily`              | `"Fira Code"`         | str   | Font family, e.g. `JetBrains Mono`, `Fira Code`. <br>See all names in carbon exported config.
 | `fontSize`                | `16`                  | int   | Just size of font in code snippets.
-| `lineNumbers`             | `True`                | bool  | Turn on/off line number
+| `lineNumbers`             | `False`               | bool  | Turn on/off line number
 | `width`                   | `680`                 | int   | Width of code snippets
+| `output_path`             | `"output/demo_adjust.pdf"` | str | Output path for pdf file.
+## Example
+Here it is result from <a href="https://carbon.now.sh/">carbon</a>
+<br>
+![preview](preview/code_preview.png)
 
 ## Task
 - [x] Main application.
 - [ ] Refactor our code.
-- [ ] Arguments parsing.
+- [x] Arguments parsing.
 - [ ] Beautify code snippets, layout, label in pdf file.
 
 ## Reference
