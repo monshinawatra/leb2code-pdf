@@ -19,7 +19,7 @@
 | `theme`                   | `"Night Owl"`         | str   | Color theme in code snippet.
 | `fontFamily`              | `"Fira Code"`         | str   | Font family, e.g. `JetBrains Mono`, `Fira Code`. <br>See all names in carbon exported config.
 | `fontSize`                | `16`                  | int   | Just size of font in code snippets.
-| `lineNumbers`             | `True`                | bool  | Turn on/off line number
+| `lineNumbers`             | `False`               | bool  | Turn on/off line number
 | `width`                   | `680`                 | int   | Width of code snippets
 
 ## Example
