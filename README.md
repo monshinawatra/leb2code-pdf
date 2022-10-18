@@ -54,9 +54,27 @@ Here it is result from <a href="https://carbon.now.sh/">carbon</a>
 ![preview](preview/code_preview.png)
 
 ## Color and theme
-Support themes
+**Support themes**
 <br> `Zenburn` `Yeti` `VSCode` `Verminal` `Twilight` `SynthWave` `Solarized (Light)` `Solorarized (Dark)` `Shades of Purple` `Seti` `Paraiso` `Panda` `One Dark` `One Light` `Oceanic Next` `Nord` `Night Owl` `Monokai` `Material` `Lucario` `Hopscotch` `Duotine` `Cobalt` `Blackboard`
+<br>
+<br>
+**Color Name**
+You can uses these color as name, but if you don't like these colors, you can use your custom hex color code.  
 
+|             Color                 |   Name              |             Color                 |   Name              |             Color                 |   Name              |
+| --------------------------------- | ------------------- | --------------------------------- | ------------------- | --------------------------------- | ------------------- |
+| ![preview](preview/color_0.png)   | `"White"`           | ![preview](preview/color_12.png)  | `"Golden Poppy"`    | ![preview](preview/color_24.png)  | `"Teal"`
+| ![preview](preview/color_1.png)   | `"Silver"`          | ![preview](preview/color_13.png)  | `"Neon Orange"`     | ![preview](preview/color_25.png)  | `"Blue"`
+| ![preview](preview/color_2.png)   | `"Gray"`            | ![preview](preview/color_14.png)  | `"Bright Orange"`   | ![preview](preview/color_26.png)  | `"Sapphire Blue"`   
+| ![preview](preview/color_3.png)   | `"Black"`           | ![preview](preview/color_15.png)  | `"Yellow"`          | ![preview](preview/color_27.png)  | `"Midnight Blue"`   
+| ![preview](preview/color_4.png)   | `"Brown Chocolate"` | ![preview](preview/color_16.png)  | `"Emerald Green"`   | ![preview](preview/color_28.png)  | `"Navy"`
+| ![preview](preview/color_5.png)   | `"Crimson"`         | ![preview](preview/color_17.png)  | `"Lime"`            | ![preview](preview/color_29.png)  | `"Purple"`
+| ![preview](preview/color_6.png)   | `"Violet Red"`      | ![preview](preview/color_18.png)  | `"Green"`           | ![preview](preview/color_30.png)  | `"Byzantium"`       
+| ![preview](preview/color_7.png)   | `"Rose Red"`        | ![preview](preview/color_19.png)  | `"Aqua"`            | ![preview](preview/color_31.png)  | `"Pastel Pink"`     
+| ![preview](preview/color_8.png)   | `"Red (NCS)"`       | ![preview](preview/color_20.png)  | `"Blue Green"`      | ![preview](preview/color_32.png)  | `"Pastel Red"`      
+| ![preview](preview/color_9.png)   | `"Red"`             | ![preview](preview/color_21.png)  | `"Jade"`            | ![preview](preview/color_33.png)  | `"Salmon"`
+| ![preview](preview/color_10.png)  | `"Cinnamon"`        | ![preview](preview/color_22.png)  | `"Jungle Green"`    | ![preview](preview/color_34.png)  | `"Peach"`
+| ![preview](preview/color_11.png)  | `"Portland Orange"` | ![preview](preview/color_23.png)  | `"Viridian"`
 ## Task
 - [x] Main application.
 - [x] Refactor our code.
