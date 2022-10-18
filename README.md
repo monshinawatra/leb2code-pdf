@@ -38,7 +38,7 @@ Arguments parsing list
 | `dir`                     | `"./"`                | str   | Your code directory.
 | `language`                | `"Python"`            | str   | Code language. `'python'` by default and `'plain-text'` for output image
 | `keyword`                 | `"lab"`               | str   | All your unique code file name.
-| `backgroundColor`         | `"Golden Poppy"`      | str   | Background color. See all color names in color config, <br>or you can use your custom HEX color code. 
+| `backgroundColor`         | `"Golden Poppy"`      | str   | Background color. See all <a href="https://github.com/monshinawatra/leb2code-pdf/#color-and-theme">color names</a>, <br>or you can use your custom HEX color code. 
 | `theme`                   | `"Night Owl"`         | str   | Color theme in code snippet.
 | `fontFamily`              | `"Fira Code"`         | str   | Font family, e.g. `JetBrains Mono`, `Fira Code`. <br>See all names in carbon exported config.
 | `fontSize`                | `16`                  | int   | Just size of font in code snippets.
