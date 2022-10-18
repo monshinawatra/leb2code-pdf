@@ -2,13 +2,23 @@
 <br> Saving your time by automatic convert **python** code files into pdf files, for KMUTT college students.
 <br> **LEB2** (Learning Environment version B2) https://www.leb2.org/
 ## Installation
-<code>git clone https://github.com/monshinawatra/leb2code-pdf.git</code>
-<br><code>pip install -r requirements.txt</code>
+```sh
+git clone https://github.com/monshinawatra/leb2code-pdf.git
+cd leb2code-pdf
+pip install -r requirements.txt
+```
+## Quick start
+Inference with `leb2code.py` 
+```
+python leb2code.py "ชินวัตร นาไชยธง"      # Full name
+                   "65090500408"        # KMUTT id
+                   -d "lab5"            # Code files directory
+                   -bg "Red (NCS)"      # Background color
+                   -s "output/lab5.pdf  # Save path
+                   -l                   # Show line number
+```
 
-## Usage
-<code>..</code>
-<br>
-<br> **Config**
+Inference with `app.py` functions
 |          Arguments        |   Default             | Type  |  Description |
 | ------------------------- | --------------------- |:-----:| ------------------------------------------- |
 | `name` (required)         |                       | str   | Your full name. e.g. `ชินวัตร นาไชยธง`, `Shinawatra Nachaithong`
