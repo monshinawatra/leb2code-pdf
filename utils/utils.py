@@ -10,9 +10,9 @@ import time
 from contextlib import redirect_stdout
 
 
-def read_code(directory: str = ".", identification: str = "lab"):
+def read_code(directory: str = ".", keyword: str = "lab"):
     files = sorted(glob1(directory, "*.py"))
-    code_files = list(filter(lambda x: bool(re.match(identification, x)), files))
+    code_files = list(filter(lambda x: bool(re.match(keyword, x)), files))
     code_texts = []
     for file in code_files:
         with open(os.path.join(directory, file), "rb") as f:
@@ -48,7 +48,7 @@ def get_output_text(code: str):
     return "\n".join(output_text)
 
 
-def get_snippet(
+def request_snippet(
     params: dict, url: str = "https://carbonara-42.herokuapp.com/api/cook", delay: float = 1.5
 ):
     assert delay > 1.25
