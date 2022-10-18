@@ -2,9 +2,25 @@ from utils import read_code, request_snippet, get_output_text
 from utils import PDFMaker
 import json
 import tqdm
+from PIL import Image
 
 
 def get_data_dict(files: list, code_list: list, print_process: bool = True) -> dict:
+    """
+    Get data as dictionary format
+
+    Args:
+        files -> All files name
+        code_list -> All code as list of string
+        print_process -> Print step between each process
+
+    Return:
+        data_dict e.g.
+        'lab_1.py' : {
+            'code': "print('Hello, world')"
+            'output': 'Hello, world'
+        }
+    """
     data_dict = {}
     for name, code in zip(files, code_list):
         if print_process:
@@ -16,7 +32,22 @@ def get_data_dict(files: list, code_list: list, print_process: bool = True) -> d
     return data_dict
 
 
-def get_snippet(params: dict, code: str, language: str = "python", line_number: bool = False):
+def get_snippet(
+    params: dict, code: str, language: str = "python", line_number: bool = False
+) -> Image:
+    """
+    Get a code snippet from utils.request_snippet
+
+    Args:
+        params: -> Parameters to request in api
+        code: -> Code as string format
+        language: -> Code language 'python' by default and 'plain-text' for output
+        line_number: -> Show line number in code snippet
+
+    Return:
+        img: -> PIL.image
+
+    """
     params["code"] = code
     params["language"] = language
     params["lineNumbers"] = line_number
@@ -25,6 +56,9 @@ def get_snippet(params: dict, code: str, language: str = "python", line_number: 
 
 
 def run_app(params: dict, arguments: dict) -> None:
+    """
+    Main functions
+    """
     LINE_NUMBER = bool(params["lineNumbers"])
 
     pdf = PDFMaker(name=arguments["name"], number=arguments["id"])
