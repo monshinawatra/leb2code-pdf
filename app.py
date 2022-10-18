@@ -6,6 +6,12 @@ import tqdm
 
 def get_data_dict(files: list, code_list: list, print_process: bool = True) -> dict:
     data_dict = {}
+<<<<<<< HEAD
+=======
+
+    with open("utils/color.json") as file:
+        colors = json.load(file)
+>>>>>>> e6cf62678f86c380e4c31901f48fb9a85ea413a8
     for name, code in zip(files, code_list):
         if print_process:
             print(f":: {name}")

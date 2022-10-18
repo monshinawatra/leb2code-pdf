@@ -6,7 +6,7 @@
 <br><code>pip install -r requirements.txt</code>
 
 ## Usage
-<code>python app.py</code>
+<code>..</code>
 <br>
 <br> **Config**
 |          Arguments        |   Default             | Type  |  Description |
