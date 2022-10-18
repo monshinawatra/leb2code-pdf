@@ -6,12 +6,6 @@ import tqdm
 
 def get_data_dict(files: list, code_list: list, print_process: bool = True) -> dict:
     data_dict = {}
-<<<<<<< HEAD
-=======
-
-    with open("utils/color.json") as file:
-        colors = json.load(file)
->>>>>>> e6cf62678f86c380e4c31901f48fb9a85ea413a8
     for name, code in zip(files, code_list):
         if print_process:
             print(f":: {name}")
@@ -33,13 +27,12 @@ def get_snippet(params: dict, code: str, language: str = "python", line_number: 
 def run_app(params: dict, arguments: dict) -> None:
     LINE_NUMBER = bool(params["lineNumbers"])
 
-    pdf = PDFMaker(name=name, number=arguments["id"])
-    files, code_list = read_code(directory=arguments["name"], keyword=arguments["keyword"])
+    pdf = PDFMaker(name=arguments["name"], number=arguments["id"])
+    files, code_list = read_code(directory=arguments["dir"], keyword=arguments["keyword"])
     data_dict = get_data_dict(files=files, code_list=code_list)
 
     with open("utils/color.json") as file:
         colors_list = json.load(file)
-
     for name in tqdm.tqdm(files):
         if not params["backgroundColor"].count("#"):
             params["backgroundColor"] = (
