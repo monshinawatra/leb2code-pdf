@@ -49,7 +49,7 @@ Arguments parsing list
 | `paddingHorizontal`       | `"50px"`              | str   | Horizontal padding
 
 ## Results
-Here it is result from <a href="https://carbon.now.sh/">carbon</a>
+Here it is result from <a href="https://carbon.now.sh/">carbon</a> `"Golden Poppy"`
 <br>
 ![preview](preview/code_preview.png)
 
