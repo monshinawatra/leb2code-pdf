@@ -81,6 +81,11 @@ You can use these as a color name, if you don't like these colors, you can use c
 - [x] Arguments parsing.
 - [ ] Beautify code snippets, layout, label in pdf file.
 
+## Contributors and support
+<a href="https://github.com/monshinawatra/leb2code-pdf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=monshinawatra/leb2code-pdf" />
+</a>
+
 ## Reference
 **Carbon** <br>
 Create and share beautiful images of your source code
