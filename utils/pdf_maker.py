@@ -17,7 +17,8 @@ class PDFMaker(FPDF):
             format=size,
         )
         self.add_page()
-        self.add_font(family="THSarabun", fname="font/THSarabun.ttf", uni=True)
+        self.set_font("helvetica", size=16)
+        self.add_font(family="THSarabun", fname="font\THSarabun.ttf", uni=True)
         if len(name):
             self.set_font("THSarabun", size=28)
             self.cell(w=0, txt=name, align="C")

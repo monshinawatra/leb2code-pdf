@@ -2,7 +2,6 @@ from glob import glob1
 import re
 import os
 import io
-import sys
 import requests
 from PIL import Image
 from io import BytesIO
@@ -22,10 +21,16 @@ def read_code(directory: str = ".", keyword: str = "lab"):
 
 def get_output_text(code: str):
     code = re.sub("(input\(.*)(['\"]\)+)", r"\1\\n\2#__leb2code-pdf", code)
+    import_list = re.findall("(^import .*)", code, re.MULTILINE)
+
     output_io = io.StringIO()
     output_var = {}
+
+    for i in import_list:
+        exec(i, globals())
     print(code)
     with redirect_stdout(output_io):
+
         exec(
             code,
             globals(),
@@ -49,9 +54,9 @@ def get_output_text(code: str):
 
 
 def request_snippet(
-    params: dict, url: str = "https://carbonara-42.herokuapp.com/api/cook", delay: float = 1.5
+    params: dict, url: str = "https://carbonara-42.herokuapp.com/api/cook", delay: float = 1
 ):
-    assert delay > 1.25
+    assert delay >= 1
     response = requests.post(url, json=params)
     response.raise_for_status()
     img = Image.open(BytesIO(response.content))
