@@ -56,6 +56,8 @@ def get_output_text(code: str):
 def request_snippet(
     params: dict, url: str = "https://carbonara-42.herokuapp.com/api/cook", delay: float = 1
 ):
+    if params["code"] == "":
+        return None
     assert delay >= 1
     response = requests.post(url, json=params)
     response.raise_for_status()
